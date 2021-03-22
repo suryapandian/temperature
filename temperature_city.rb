@@ -2,10 +2,8 @@
 
 require_relative 'http'
 
-
-
 class CityTemperature
-include HttpHelper
+  include HttpHelper
 
   attr_reader :city, :temperature_data
 
@@ -90,5 +88,3 @@ include HttpHelper
                                                                               temperature_data[:temperature_maxima])) / 2
   end
 end
-
-
